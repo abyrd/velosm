@@ -1,0 +1,179 @@
+{
+  "bounds": [
+    2.3329,
+    48.8358,
+    2.4197,
+    48.8908
+  ],
+  "center": [
+    2.3766,
+    48.8637,
+    13
+  ],
+  "format": "png8",
+  "interactivity": false,
+  "minzoom": 13,
+  "maxzoom": 16,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        1.9998611111111133,
+        47.999921937671644,
+        3.0001870789870466,
+        49.00013888795502
+      ],
+      "id": "slopecolor",
+      "class": "",
+      "Datasource": {
+        "file": "/home/tristram/hackcheminots/0302737948ijlqD/slope_color.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "slopecolor",
+      "status": "off"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        1.9998611111111133,
+        47.999921937671644,
+        3.0001870789870466,
+        49.00013888795502
+      ],
+      "id": "hillshade",
+      "class": "",
+      "Datasource": {
+        "file": "/home/tristram/hackcheminots/0302737948ijlqD/hillshade.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "hillshade",
+      "status": "off"
+    },
+    {
+      "extent": [
+        1.3133350535037753,
+        48.0380412262805,
+        3.592038160607959,
+        49.292591771121145
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "osm_new_roads",
+        "key_field": "osm_id",
+        "geometry_field": "geometry",
+        "extent_cache": "auto",
+        "extent": "146199.789396997,6113185.87443322,399863.858948885,6324654.7134476",
+        "user": "tristram",
+        "password": "tristram",
+        "dbname": "osm",
+        "id": "Roads",
+        "project": "Velosm",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      },
+      "id": "Roads",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "Roads"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -0.0004166182681427288,
+        44.999307426454315,
+        4.999974430274488,
+        50.00041702892353
+      ],
+      "id": "hillshadesrtm",
+      "class": "",
+      "Datasource": {
+        "file": "/home/tristram/hackcheminots/hillshade_srtm.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "hillshadesrtm"
+    },
+    {
+      "geometry": "raster",
+      "extent": [
+        -0.0004166182681427288,
+        44.999307426454315,
+        4.999974430274488,
+        50.00041702892353
+      ],
+      "id": "slopesrtmcolor",
+      "class": "",
+      "Datasource": {
+        "file": "/home/tristram/hackcheminots/slope_srtm_color.tif"
+      },
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "slopesrtmcolor"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -0.0004166182681528685,
+        44.99958369651887,
+        5.000416715065182,
+        50.0004170298522
+      ],
+      "id": "contour",
+      "class": "",
+      "Datasource": {
+        "file": "/home/tristram/hackcheminots/contour.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "contour"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -0.0004166182681528685,
+        44.99958369651887,
+        5.000416715065182,
+        50.0004170298522
+      ],
+      "id": "contour50",
+      "class": "",
+      "Datasource": {
+        "file": "/home/tristram/hackcheminots/contour50.shp",
+        "id": "contour50",
+        "project": "Velosm",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "contour50"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Velosm",
+  "description": "",
+  "attribution": ""
+}
